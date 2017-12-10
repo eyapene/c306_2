@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * Classe de test d'une grille sudoku.
  *
- * @author ATSOU Komi Bi-Ayéfo and BOKOBOSSO Eyapene
+ * @author ATSOU Komi Bi-Ayéfo and BOKOBOSSO Eyapènè
  */
 public class GrilleTest {
 
