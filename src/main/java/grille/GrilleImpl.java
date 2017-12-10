@@ -54,6 +54,8 @@ public class GrilleImpl implements Grille {
             throws IllegalArgumentException {
         if (possible(x, y, value)) {
             this.grille[x - 1][y - 1] = value;
+        } else { 
+            throw new IllegalArgumentException("Valeur interdite");
         }
     }
 
