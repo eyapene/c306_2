@@ -17,7 +17,6 @@ public class GrilleTest {
      * vides.
      */
     static final char EMPTY = Grille.EMPTY;
-    // Modif
 
     /**
      * Grille vide.
