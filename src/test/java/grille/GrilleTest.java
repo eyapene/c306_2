@@ -240,8 +240,8 @@ public class GrilleTest {
                             TEST_GETVALUE_INDEX_X_NEGATIF_Y);
             fail("Une IllegalArgumentException aurait "
                     + "du etre levee pour l'index x");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
         try {
             char recupIndexYNegatif =
@@ -249,8 +249,8 @@ public class GrilleTest {
                             TEST_GETVALUE_INDEX_Y_NEGATIF);
             fail("Une IllegalArgumentException "
                     + "aurait du etre levee pour l'index y");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
     }
 
@@ -267,16 +267,16 @@ public class GrilleTest {
             sudoku.setValue(TEST_SETVALUE_LEVEE_EXCEPTION_X_VAL_X,
                     TEST_SETVALUE_LEVEE_EXCEPTION_X_VAL_Y, '6');
             fail("Une IllegalArgumentException aurait du etre levee pour x");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
 
         try {
             sudoku.setValue(TEST_SETVALUE_LEVEE_EXCEPTION_Y_VAL_X,
                     TEST_SETVALUE_LEVEE_EXCEPTION_Y_VAL_Y, '6');
             fail("Une IllegalArgumentException aurait du etre levee pour y");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
 
         // Valeur interdite
@@ -285,8 +285,8 @@ public class GrilleTest {
                     TEST_SETVALUE_LEVEE_EXCEPTION_VAL_INTERDITE_Y, 'z');
             fail("Une IllegalArgumentException aurait "
                     + "du etre levee pour la valeur");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
     }
 
@@ -302,15 +302,15 @@ public class GrilleTest {
             char valeur = sudoku.getValue(TEST_GETVALUE_LEVEE_EXCEPTION_X_VAL_X,
                     TEST_GETVALUE_LEVEE_EXCEPTION_X_VAL_Y);
             fail("Une IllegalArgumentException aurait du etre levee pour x");
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException expected) {
 
         }
         try {
             char valeur = sudoku.getValue(TEST_GETVALUE_LEVEE_EXCEPTION_Y_VAL_X,
                     TEST_GETVALUE_LEVEE_EXCEPTION_Y_VAL_Y);
             fail("Une IllegalArgumentException aurait du etre levee pour y");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
     }
 
@@ -340,16 +340,16 @@ public class GrilleTest {
             sudoku.possible(TEST_POSSIBLE_LEVEE_EXCEPTION_X_VAL_X,
                     TEST_POSSIBLE_LEVEE_EXCEPTION_X_VAL_Y, '6');
             fail("Une IllegalArgumentException aurait du etre levee pour x");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
 
         try {
             sudoku.possible(TEST_POSSIBLE_LEVEE_EXCEPTION_Y_VAL_X,
                     TEST_POSSIBLE_LEVEE_EXCEPTION_Y_VAL_Y, '6');
             fail("Une IllegalArgumentException aurait du etre levee pour y");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
 
         // Valeur interdite
@@ -358,8 +358,8 @@ public class GrilleTest {
                     TEST_POSSIBLE_LEVEE_EXCEPTION_VAL_INTERDITE_Y, 'z');
             fail("Une IllegalArgumentException aurait du "
                     + "etre levee pour la valeur");
-        } catch (IllegalArgumentException e) {
-
+        } catch (IllegalArgumentException expected) {
+            //rien a faire, c'est l'effet voulu
         }
 
     }

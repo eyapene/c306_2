@@ -2,7 +2,7 @@ package grille;
 
 /**
  *
- * @author k.atsou Interface d'une grille de sudoku
+ * @author ATSOU Komi Bi-Ayéfo and BOKOBOSSO Eyapènè Interface d'une grille de sudoku
  *
  */
 public interface Grille {

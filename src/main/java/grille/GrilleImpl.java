@@ -5,7 +5,7 @@ package grille;
  *
  * Implementation d'une interface modelisant une grille Sudoku.
  *
- * @author k.atsou
+ * @author ATSOU Komi Bi-Ayéfo and BOKOBOSSO Eyapènè
  *
  */
 public class GrilleImpl implements Grille {
